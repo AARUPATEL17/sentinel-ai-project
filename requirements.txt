@@ -1,0 +1,41 @@
+# SENTINEL v3.0 — Full Stack Dependencies
+# Run: pip install -r requirements.txt
+
+# ── Core ──────────────────────────────────────────────────────────────────────
+streamlit>=1.32.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# ── Computer Vision (Camera + Object Detection) ───────────────────────────────
+opencv-python-headless>=4.8.0   # Use opencv-python for GUI features
+Pillow>=10.0.0
+
+# ── Audio Analysis ────────────────────────────────────────────────────────────
+# librosa>=0.10.0                # Uncomment for real audio analysis
+# sounddevice>=0.4.6             # Uncomment for microphone capture
+# soundfile>=0.12.1
+
+# ── Map / Geospatial ──────────────────────────────────────────────────────────
+folium>=0.15.0
+streamlit-folium>=0.18.0
+
+# ── Flask API Backend ─────────────────────────────────────────────────────────
+flask>=3.0.0
+flask-cors>=4.0.0               # Cross-origin for Streamlit ↔ Flask
+
+# ── Notifications ─────────────────────────────────────────────────────────────
+# twilio>=8.0.0                  # Uncomment for real SMS
+# Add to SMTP: already built into Python's smtplib
+
+# ── AI / Chatbot ─────────────────────────────────────────────────────────────
+# anthropic>=0.20.0              # Uncomment for Claude AI chatbot
+# openai>=1.0.0                  # Uncomment for GPT-4 chatbot
+
+# ── Database ──────────────────────────────────────────────────────────────────
+# sqlite3 is built into Python — no install needed
+# For MySQL:  pip install mysql-connector-python
+# For Firebase: pip install firebase-admin
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0            # For .env credential files
+requests>=2.31.0                # For Streamlit ↔ Flask API calls
